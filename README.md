@@ -65,7 +65,7 @@ Static blocks are executed when the '.class' file is loaded, once.
 ##### Static blocks are executed once, and they are executed first.
 
 
-### When to use static and instance blocks
+### When to use static and instance blocks:
 
 ▹ If you want to execute the data once, you can go for the static blocks.
 
