@@ -53,3 +53,20 @@ Blocks are '{}'.
 Instance blocks are executed when the object is created. Constructors are also executed when the object is created too. But instance blocks are executed first.
 
 
+##### Constructor logics are specific to an object but instance object logics are common to all objects. Whenever the object is created, blocks will always be executed first.
+
+static 
+
+{
+} is called a static block.
+
+Static blocks are executed when the '.class' file is loaded, once.
+
+##### Static blocks are executed once, and they are executed first.
+
+
+#### When to use static and instance blocks
+
+▹ If you want to execute the data once, you can go for the static blocks.
+
+▹ If you want to execute the data whenever the object is created, you can use the instance blocks.
