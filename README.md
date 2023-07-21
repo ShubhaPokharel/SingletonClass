@@ -12,19 +12,34 @@
 class Test{
 
   Variables
+  
     - local variables
+    
     - instance variables
+    
     - static variables
+    
 
   Methods
+  
     - instance methods
+    
     - static methods
+    
 
   Constructors
+  
     - default constructor
+    
     - user defined construtor
+    
 
   Blocks
+  
     - instance blocks
-    static blocks
+    
+    - static blocks
+    
 }
+
+
