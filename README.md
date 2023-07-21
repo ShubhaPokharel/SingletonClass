@@ -1,4 +1,4 @@
-# SingletonClass
+# SingletonClass and Blocks
 
 # Eager and Lazy initialization
 
@@ -70,3 +70,44 @@ Static blocks are executed when the '.class' file is loaded, once.
 ▹ If you want to execute the data once, you can go for the static blocks.
 
 ▹ If you want to execute the data whenever the object is created, you can use the instance blocks.
+
+
+Example: 
+
+class Test{
+
+  Test(int num1){
+
+    System.out.println("1 arg constructor");
+  }
+
+  Test(int num2, int num3){
+
+    System.out.println("2 arg constructor");
+  }
+
+  {
+
+    System.out.println("Instance block 1");
+  }
+
+  {
+
+    System.out.println("Instance block 2");
+  }
+
+  static
+
+  {
+
+    System.out.println("Static block 1");
+  }
+
+  public static void main(String[] args){
+
+    Test t1 = new Test(100);
+
+     Test t1 = new Test(100,200);
+  }
+  
+}
