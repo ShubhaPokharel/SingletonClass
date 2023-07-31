@@ -149,9 +149,28 @@ Singleton class means when one object is created and executed. If we have 2 obje
 
         test = new Test();
 
-  Test.initialized = true;
+        Test.initialized = true;
 
-  return test;
+        return test;
   
       }
   }
+
+class TestClient{
+
+    public static void main(String[] args){
+
+        Test t1 = Test.getInstance();
+
+        System.out.println(t1);
+
+        Test t2 = Test.getInstance();
+
+        System.out.println(t2);
+
+        Test t3 = Test.getInstance();
+
+        System.out.println(t3);
+    }
+    
+}
