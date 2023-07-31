@@ -156,7 +156,7 @@ Singleton class means when one object is created and executed. If we have 2 obje
       }
   }
 
-class TestClient{
+class TestClient {
 
     public static void main(String[] args){
 
