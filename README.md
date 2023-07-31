@@ -111,3 +111,47 @@ class Test{
   }
   
 }
+
+
+## Singleton classes
+Singleton class means when one object is created and executed. If we have 2 objects then the existing object or first object will be executed.
+
+#### We can use Singleton classes - 
+- Window manager
+  
+- Database Connecter
+
+- File manager
+
+- UI dialogs
+
+- Resource allocaters
+
+  Whe multiple clinets request for that object, we can return that object.
+
+  Ex:
+
+  class Test{
+
+      private static boolean initialized = false;
+
+      private static Test test;
+
+      private Test(){
+    
+        public static Test getInstance();
+
+        if(initialized){
+
+            return test;
+
+        }
+
+        test = new Test();
+
+  Test.initialized = true;
+
+  return test;
+  
+      }
+  }
